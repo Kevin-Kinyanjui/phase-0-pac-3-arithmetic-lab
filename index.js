@@ -61,15 +61,9 @@ function preserveDecimal(n) {
     }
 console.log(preserveDecimal(2.2));
 
+function makeInt(n) {
+  return (parseInt(n, 10))
+}
+console.log(makeInt(2,))
 
-function makeInt() {
-    return{ 
-      inttrue: parseInt("2", 10),
-      intfalse: parseInt("hell0", 10)
-    }
-    }
-const result = makeInt();
-let int1 = result.inttrue;
-let intnull = result.intfalse;
-console.log(int1); 
-console.log(intnull);
+
