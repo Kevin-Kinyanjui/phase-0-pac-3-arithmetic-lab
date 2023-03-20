@@ -63,11 +63,13 @@ console.log(preserveDecimal(2.2));
 
 
 function makeInt() {
-    return parseInt("hello", 10);
+    return{ 
+      inttrue: parseInt("2", 10),
+      intfalse: parseInt("hell0", 10)
     }
-console.log(makeInt());
-
-function makeInt() {
-    return (parseInt("2", 10));
-  }
-console.log(makeInt());
+    }
+const result = makeInt();
+let int1 = result.inttrue;
+let intnull = result.intfalse;
+console.log(int1); 
+console.log(intnull);
